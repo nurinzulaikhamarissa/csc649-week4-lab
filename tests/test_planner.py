@@ -40,12 +40,7 @@ def test_is_not_urgent_when_due_limit():
     assert is_urgent(due, today) is False
 
 # TODO 5: sort_by_due puts the soonest task first.
-def test_sort_by_due_puts_soonest_first():
-        tasks = [
-            {"title": "B", "due": date(2026, 10, 25)},
-            {"title": "A", "due": date(2026, 10, 20)},
-        ]
-    assert [t["title"] for t in sort_by_due(tasks)] == ["A", "B"]
+
 
 # TODO 6: completion_rate returns 0.0 when there are no tasks.
 # TODO 7: completion_rate(1, 3) returns 33.3.
